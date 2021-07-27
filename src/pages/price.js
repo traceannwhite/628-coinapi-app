@@ -6,7 +6,7 @@ const Price = (props) => {
     // grabbing the currency symbol from the URL Param
     const symbol = props.match.params.symbol
     //using the the other two variable to create our URL 
-    const url = `http://rest.coinapi.io/v1/exchangerate/${symbol}/USD?apikey=${apiKey}`
+    const url = `https://rest.coinapi.io/v1/exchangerate/${symbol}/USD?apikey=${apiKey}`
 
     //state to hold coin data and trigger a rerender
     const [coin, setCoin] = useState(null)
